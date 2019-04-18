@@ -15,12 +15,12 @@ public class QuickSort {
         }
 
         int mIndex = (sIndex + eIndex) / 2;
-        testQ(num, sIndex, eIndex);
+        doFastSort(num, sIndex, eIndex);
         fastSort(num, 0, mIndex - 1);
         fastSort(num, mIndex + 1, eIndex);
     }
 
-    private static void testQ(int[] num, int sIndex, int eIndex) {
+    private static void doFastSort(int[] num, int sIndex, int eIndex) {
         int mIndex = (sIndex + eIndex) / 2;
 //        int mValue = num[mIndex];
         int i = sIndex, j = eIndex;
