@@ -10,6 +10,12 @@ import java.util.concurrent.*;
 
 public class SocketServer {
 
+    /**
+     * 会阻塞在3个地方，线程状态为runnable，不断地争取CPU时间片，其中读写的耗时很可怕，长达1s中的read。
+     * 1.等待新客户端连接，accept
+     * 2.等待有内容可以接受，read
+     * 3.等待发送内容完毕，write
+     */
     public void startServer() {
         try {
             // listen, man.
