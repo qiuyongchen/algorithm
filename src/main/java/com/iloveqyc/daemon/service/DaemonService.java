@@ -18,9 +18,9 @@ public class DaemonService {
     public void reportCurrentTime() throws Exception {
         log.info("server system time: {}", new Date());
 
-        HttpResponse response;
-        HttpRequestParam httpRequestParam = new HttpRequestParam("http://www.baidu.com", null, null);
-        response = OpenOkHttpClient.getInstance().executePost(httpRequestParam);
+//        HttpResponse response;
+//        HttpRequestParam httpRequestParam = new HttpRequestParam("http://www.baidu.com", null, null);
+//        response = OpenOkHttpClient.getInstance().executePost(httpRequestParam);
 
     }
 
